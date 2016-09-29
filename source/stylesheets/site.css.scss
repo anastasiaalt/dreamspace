@@ -205,6 +205,13 @@ header {
 
   margin-bottom: 40px;
 
+  background-color: $blue;
+  color: $white;
+  padding: 30px 0;
+  h2 {
+    font-weight: $font-weight-light;
+  }
+
   input {
     display: inline-block;
     text-align: center;
@@ -263,14 +270,8 @@ header {
 
   .indicates-required {
     font-size: $font-size-S;
-    color: $blue;
+    color: $white;
   }
-  // div.mce_inline_error {
-  //   background-color: none;
-  //   color: $red;
-  //   font-size: $font-size-S;
-  //   font-weight: $font-weight-light;
-  // }
 }
 
 .mce_inline_error {
@@ -288,7 +289,7 @@ header {
 #logos {
   margin-bottom: 40px;
   img {
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -296,7 +297,7 @@ footer {
   background-color: $blue;
   color: $white;
   font-weight: $font-weight-light;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
