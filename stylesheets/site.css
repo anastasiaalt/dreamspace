@@ -534,14 +534,16 @@ header {
 
 /* line 204, site.css.scss */
 #mailChimp {
+  /* Rectangle 6: */
+  background-image: linear-gradient(-180deg, #35B9E1 0%, #1E9ADB 100%);
   margin-bottom: 40px;
   background-color: #35B9E1;
   color: #fff;
   padding: 30px 0; }
-  /* line 211, site.css.scss */
+  /* line 214, site.css.scss */
   #mailChimp h2 {
     font-weight: 300; }
-  /* line 215, site.css.scss */
+  /* line 218, site.css.scss */
   #mailChimp input {
     display: inline-block;
     text-align: center;
@@ -562,10 +564,10 @@ header {
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset; }
     @media (min-width: 768px) {
-      /* line 215, site.css.scss */
+      /* line 218, site.css.scss */
       #mailChimp input {
         max-width: 320px; } }
-  /* line 241, site.css.scss */
+  /* line 244, site.css.scss */
   #mailChimp input[type="submit"] {
     background: #35B9E1;
     transition: background-color 0.5s ease;
@@ -576,49 +578,49 @@ header {
     box-shadow: none;
     -webkit-border-radius: 24px;
     border-radius: 24px; }
-  /* line 256, site.css.scss */
+  /* line 259, site.css.scss */
   #mailChimp input[type="submit"]:hover {
-    background: #0084FF;
+    background: #1E9ADB;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12); }
-  /* line 263, site.css.scss */
+  /* line 266, site.css.scss */
   #mailChimp input[type="submit"]:active {
-    background: #0084FF;
+    background: #1E9ADB;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset; }
-  /* line 271, site.css.scss */
+  /* line 274, site.css.scss */
   #mailChimp .indicates-required {
     font-size: 14px;
     color: #fff; }
 
-/* line 277, site.css.scss */
+/* line 280, site.css.scss */
 .mce_inline_error {
   background-color: none;
   color: #E1354A;
   font-size: 14px;
   font-weight: 300; }
 
-/* line 284, site.css.scss */
+/* line 287, site.css.scss */
 #mce-responses {
   max-width: 400px;
   margin: 20px auto; }
 
-/* line 289, site.css.scss */
+/* line 292, site.css.scss */
 #logos {
   margin-bottom: 40px; }
-  /* line 291, site.css.scss */
+  /* line 294, site.css.scss */
   #logos img {
     padding: 10px 20px; }
 
-/* line 296, site.css.scss */
+/* line 299, site.css.scss */
 footer {
-  background-color: #35B9E1;
+  background-color: #1E9ADB;
   color: #fff;
   font-weight: 300;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  /* line 305, site.css.scss */
+  /* line 308, site.css.scss */
   footer a {
     color: white; }
