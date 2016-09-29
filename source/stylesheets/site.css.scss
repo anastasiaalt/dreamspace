@@ -213,7 +213,11 @@ header {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     width: 100%;
-    max-width: $messageWidth;
+    max-width: $messageWidth - 40px;
+
+    @include tabletPlus {
+      max-width: $messageWidth;
+    }
 
     color: $darkGrey;
     font-weight: $font-weight-light;
