@@ -1,0 +1,303 @@
+@charset "utf-8";
+@import "normalize";
+@import "mixins";
+
+$grey: #F7F7F7;
+$darkGrey: #5C5C5C;
+$white: #fff;
+$blue: #35B9E1;
+$darkBlue: #0084FF;
+$red: #E1354A;
+
+$container: 800px;
+$messageWidth: 320px;
+$bubbleRadius: 24px;
+$bubbleRadiusSmall: 4px;
+
+// Typography Variables
+$font-size-L: 36px;
+$font-size-M: 16px;
+$font-size-S: 14px;
+
+// General Typography
+
+$font-weight-light: 300;
+$font-weight-bold: 600;
+
+$font-family: 'Signika', sans-serif;;
+
+
+// General CSS
+
+body {
+  background: $grey;
+  text-align: center;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  color: $darkGrey;
+  font-weight: $font-weight-light;
+}
+
+.container {
+  max-width: $container;
+  background: $white;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  img {
+    margin-top: 30px;
+    display: inline-block;
+    padding-left:35px;
+  }
+}
+
+#chat {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 10px;
+  @include tabletPlus {
+      margin: 40px;
+    }
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 100%;
+    padding: 0 10px;
+    
+    @include tabletPlus {
+      padding: 0 40px;
+    }
+
+    p {
+      max-width: $messageWidth;
+      display: inline-block;
+      padding: 15px;
+      font-size: $font-size-M;
+      font-weight: $font-weight-light;
+    }
+
+    img {
+      width: 35px;
+        @include tabletPlus {
+          width: 60px;
+        }
+    }
+
+    .dream-message {
+      text-align: left;
+      margin-top: 20px;
+
+      p {
+        background-color: $grey;
+        text-align: left;
+        margin: 5px auto 0 45px;
+          @include tabletPlus {
+              margin: 5px auto 0 70px;
+          }
+
+        padding-right: 30px;
+        padding-left: 25px;
+        color: $darkGrey;
+
+        border-radius: 
+          $bubbleRadiusSmall 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadiusSmall;
+      }
+      .open {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius
+          $bubbleRadius 
+          $bubbleRadiusSmall;
+      }
+      .single {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius;
+      }
+      .close {
+        border-radius: 
+          $bubbleRadiusSmall
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius;
+          margin-bottom: 10px;
+      }
+      .last {
+        display: flex;
+        align-items: flex-start;
+        p {
+          margin: 5px auto 0 10px;
+        }
+      }
+
+    }
+
+    .user-message {
+      text-align: right;
+      margin-top: 20px;
+      
+      p {
+        background-color: $blue;
+        text-align: right;
+        margin: 5px 45px 0 auto;
+         @include tabletPlus {
+              margin: 5px 70px auto 5px;
+          }
+
+        color: $white;
+        padding-right: 20px;
+        padding-left: 30px;
+
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadiusSmall 
+          $bubbleRadiusSmall
+          $bubbleRadius;
+      }
+      .open {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius
+          $bubbleRadiusSmall 
+          $bubbleRadius;
+      }
+      .single {
+        border-radius: 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius 
+          $bubbleRadius;
+      }
+      .close {
+        border-radius: 
+          $bubbleRadius
+          $bubbleRadiusSmall
+          $bubbleRadius 
+          $bubbleRadius;
+          margin-bottom: 10px;
+      }
+      .last {
+        display: flex;
+        align-items: flex-start;
+        p {
+          margin: 5px 10px 0 auto;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+#mailChimp {
+
+  margin-bottom: 40px;
+
+  input {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px 10px 20px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    max-width: $messageWidth;
+
+    color: $darkGrey;
+    font-weight: $font-weight-light;
+
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid $grey;
+    -webkit-border-radius: $bubbleRadiusSmall;
+    border-radius: $bubbleRadiusSmall;
+    background: $white;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+  }
+  input[type="submit"] {
+    background: $blue;
+    transition: background-color 0.5s ease;
+    // transition: box-shadow 0.5s ease;
+    color: $white;
+    font-weight: $font-weight-light;
+    margin-top: 20px;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    -webkit-border-radius: $bubbleRadius;
+    border-radius: $bubbleRadius;
+
+  }
+  input[type="submit"]:hover {
+    
+    background: $darkBlue;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12);
+  }
+
+  input[type="submit"]:active {
+    
+    background: $darkBlue;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.12) inset;
+  }
+
+
+  .indicates-required {
+    font-size: $font-size-S;
+    color: $blue;
+  }
+  // div.mce_inline_error {
+  //   background-color: none;
+  //   color: $red;
+  //   font-size: $font-size-S;
+  //   font-weight: $font-weight-light;
+  // }
+}
+
+.mce_inline_error {
+    background-color: none;
+    color: $red;
+    font-size: $font-size-S;
+    font-weight: $font-weight-light;
+  }
+
+  #mce-responses {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+#logos {
+  margin-bottom: 40px;
+  img {
+    padding: 0 20px;
+  }
+}
+
+footer {
+  background-color: $blue;
+  color: $white;
+  font-weight: $font-weight-light;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    color: white;
+  }
+}
