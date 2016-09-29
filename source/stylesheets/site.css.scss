@@ -6,7 +6,7 @@ $grey: #F7F7F7;
 $darkGrey: #5C5C5C;
 $white: #fff;
 $blue: #35B9E1;
-$darkBlue: #0084FF;
+$darkBlue: #1E9ADB;
 $red: #E1354A;
 
 $container: 800px;
@@ -203,6 +203,9 @@ header {
 
 #mailChimp {
 
+  /* Rectangle 6: */
+background-image: linear-gradient(-180deg, $blue 0%, $darkBlue 100%);
+
   margin-bottom: 40px;
 
   background-color: $blue;
@@ -294,7 +297,7 @@ header {
 }
 
 footer {
-  background-color: $blue;
+  background-color: $darkBlue;
   color: $white;
   font-weight: $font-weight-light;
   height: 50px;
