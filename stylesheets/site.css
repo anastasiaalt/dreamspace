@@ -555,9 +555,9 @@ header {
     max-width: 280px;
     color: #5C5C5C;
     font-weight: 300;
+    border: none;
     height: 30px;
     padding: 10px 20px;
-    border: 1px solid #F7F7F7;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     background: #fff;
@@ -567,10 +567,11 @@ header {
       /* line 218, site.css.scss */
       #mailChimp input {
         max-width: 320px; } }
-  /* line 244, site.css.scss */
+  /* line 245, site.css.scss */
   #mailChimp input[type="submit"] {
     background: #35B9E1;
     transition: background-color 0.5s ease;
+    border: 1px solid #fff;
     color: #fff;
     font-weight: 300;
     margin-top: 20px;
@@ -578,41 +579,41 @@ header {
     box-shadow: none;
     -webkit-border-radius: 24px;
     border-radius: 24px; }
-  /* line 259, site.css.scss */
+  /* line 262, site.css.scss */
   #mailChimp input[type="submit"]:hover {
     background: #1E9ADB;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12); }
-  /* line 266, site.css.scss */
+  /* line 269, site.css.scss */
   #mailChimp input[type="submit"]:active {
     background: #1E9ADB;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.12) inset; }
-  /* line 274, site.css.scss */
+  /* line 277, site.css.scss */
   #mailChimp .indicates-required {
     font-size: 14px;
     color: #fff; }
 
-/* line 280, site.css.scss */
+/* line 283, site.css.scss */
 .mce_inline_error {
   background-color: none;
   color: #E1354A;
   font-size: 14px;
   font-weight: 300; }
 
-/* line 287, site.css.scss */
+/* line 290, site.css.scss */
 #mce-responses {
   max-width: 400px;
   margin: 20px auto; }
 
-/* line 292, site.css.scss */
+/* line 295, site.css.scss */
 #logos {
   margin-bottom: 40px; }
-  /* line 294, site.css.scss */
+  /* line 297, site.css.scss */
   #logos img {
     padding: 10px 20px; }
 
-/* line 299, site.css.scss */
+/* line 302, site.css.scss */
 footer {
   background-color: #1E9ADB;
   color: #fff;
@@ -621,6 +622,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  /* line 308, site.css.scss */
+  /* line 311, site.css.scss */
   footer a {
     color: white; }
